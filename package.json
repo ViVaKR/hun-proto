@@ -1,0 +1,44 @@
+{
+  "name": "hun-proto",
+  "publisher": "buddham-hq",
+  "displayName": "Hun proto 파일 구문 강조",
+  "description": "Protocol Buffers 파일(`.proto`)을 위한 깔끔하고 가벼운 VS Code 구문 강조(Syntax Highlighting) 확장입니다.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Kim Bum Jun (ViVaKR)",
+    "url": "https://github.com/ViVaKR"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ViVaKR/nginx-conf-doctor.git"
+  },
+  "engines": {
+    "vscode": "^1.140.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "icon.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "proto",
+        "aliases": [
+          "Protocol Buffers",
+          "proto"
+        ],
+        "extensions": [
+          ".proto"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "proto",
+        "scopeName": "source.hun-proto",
+        "path": "./syntaxes/proto.tmLanguage.json"
+      }
+    ]
+  }
+}
